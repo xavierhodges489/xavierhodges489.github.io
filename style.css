@@ -80,10 +80,11 @@ body {
 
     .header {
         margin: 20px 10px;
+        flex-direction: column;
     }
 
     .menu {
-        flex-direction: column;
+        
     }
 
     .wrapper {
