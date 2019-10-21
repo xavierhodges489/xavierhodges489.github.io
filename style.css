@@ -119,15 +119,21 @@ body {
 }
 
 #musicplayer .projectimg {
-    background-color: red;
+    background-image: url("images/musicplayergui.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 #illustratorexporter .projectimg {
-    background-color: orange;
+
 }
 
 #savannahport .projectimg {
-    background-color: purple;
+    background-image: url("images/savannahportmodel.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 #works {
@@ -216,6 +222,7 @@ body {
 
 #contact {
     margin: 50px 0px;
+    /* background-color: blue; */
 }
 
 @media (max-width: 1024px) {
