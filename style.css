@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
 }
 
@@ -17,34 +17,128 @@ body {
 }
 
 .header h1 {
-    font-size: 2em;
-    font-weight: 400;
+    font-size: 2.2em;
+    font-weight: 700;
     margin: 0;
 }
 
 .menu {
     display: flex;
     margin-right: -20px;
+    list-style: none;
 }
 
-.menu h2 {
+.menu li {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
-    font-weight: 200;
-    margin: 0px 20px;
+    font-weight: 400;
+    margin: 0px 8px;
+    padding: 10px 20px;
+
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    transition: all .2s;
 }
 
-.line {
+.menu li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+}
+
+/* .line {
     background: black;
     width: 100%;
     height: 1px;
     margin: 20px 0px 30px 0px;
+} */
+
+/* .portfolio h2 {
+    font-weight: 200;
+} */
+
+.sectiontitle {
+    font-size: 3.5rem;
+    font-weight: 100;
+}
+
+#projects {
+    margin: 100px 0;
+}
+
+.project {
+    /* background-color: gray; */
+    position: relative;
+    height: 400px;
+    margin: 50px 0;
+}
+
+.projectimg {
+    background-color: gainsboro;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 30px;
+    left: 30px;
+}
+
+.info {
+    background-color: white;
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    bottom: 0px;
+    left: 0px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .3);
+    padding: 30px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.info h2 {
+    margin: 0;
+}
+
+.info p {
+    margin: 0;
+}
+
+.info > p {
+    color: rgb(120, 120, 120);
+}
+
+.viewproject {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.viewproject img {
+    width: 8%;
+    height: auto;
+    margin: 0 30px;
+}
+
+#musicplayer .projectimg {
+    background-color: red;
+}
+
+#illustratorexporter .projectimg {
+    background-color: orange;
+}
+
+#savannahport .projectimg {
+    background-color: purple;
+}
+
+#works {
+    margin: 50px 0px;
 }
 
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 1fr;
-    /* margin: 30px -5px; */
+    margin: 30px -5px;
     overflow: hidden;
 }
 
@@ -62,7 +156,7 @@ body {
 }
 
 .frame {
-    /* margin: 5px; */
+    margin: 5px;
     /* height: 300px; */
     display: flex;
     justify-content: center;
@@ -71,8 +165,6 @@ body {
     position: relative;
     /* background: black; */
 }
-
-
 
 .overlay {
     position: absolute;
@@ -106,7 +198,9 @@ body {
     z-index: 1;
     color: white;
     margin: 0;
-    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
     bottom: 16px;
     left: 24px;
 
@@ -116,8 +210,12 @@ body {
     transition: all .2s;
 }
 
-.frame:hover > p {
+ .frame:hover > p {
     opacity: 1;
+}
+
+#contact {
+    margin: 50px 0px;
 }
 
 @media (max-width: 1024px) {
@@ -135,10 +233,6 @@ body {
     .header {
         margin: 20px 10px;
         flex-direction: column;
-    }
-
-    .menu {
-        
     }
 
     .wrapper {
