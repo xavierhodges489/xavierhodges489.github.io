@@ -60,12 +60,14 @@ body {
 
 .dots {
     position: absolute;
-    top: right;
+    /* top: right; */
     right: 0;
-    width: 70%;
-    height: 80%;
-    background-image: radial-gradient(rgb(255, 36, 36) 7%, transparent 7%);
+    bottom: 0;
+    left: 0;
+    top: 60px;
+    background-image: radial-gradient(rgb(202, 202, 202) 7%, transparent 7%);
     background-size: 50px 50px;
+    background-position-y: 0px;
 }
 
 /* #illustratorexporter .dots {
@@ -74,24 +76,26 @@ body {
 
 .project {
     position: relative;
-    min-height: 500px;
-    margin: 50px 0;
+    min-height: 450px;
+    margin: 100px 0;
 }
 
 .projectimg {
     position: absolute;
-    top: 6%;
-    bottom: 75px;
-    left: 50px;
-    padding: 25px;
+    top: 0;
+    bottom: 80px;
+    left: 100px;
+    min-width: 0;
+    /* background: grey; */
+    /* padding: 25px; */
 }
 
 .projectimg img {
     object-fit: cover;
-    max-width: 90%;
+    max-width: 85%;
     max-height: 100%;
-    border: solid rgb(255, 36, 36) 25px;
-    background-color: rgb(255, 36, 36);
+    border: solid rgb(117, 117, 117) 18px;
+    background-color: rgb(117, 117, 117);
 }
 
 .info {
@@ -122,13 +126,14 @@ body {
 .viewproject {
     display: flex;
     align-items: center;
-    margin-bottom: 0;
+    margin-bottom: -20px;
 }
 
 .viewproject img {
     width: 8%;
     height: auto;
     margin: 0 30px;
+    /* background: grey; */
 }
 
 #works {
