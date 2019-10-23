@@ -70,10 +70,6 @@ body {
     background-position-y: 0px;
 }
 
-/* #illustratorexporter .dots {
-    background-image: radial-gradient(rgb(190, 190, 190) 7%, transparent 7%);
-} */
-
 .project {
     position: relative;
     min-height: 450px;
@@ -86,8 +82,7 @@ body {
     bottom: 80px;
     left: 100px;
     min-width: 0;
-    /* background: grey; */
-    /* padding: 25px; */
+
 }
 
 .projectimg img {
@@ -133,7 +128,6 @@ body {
     width: 8%;
     height: auto;
     margin: 0 30px;
-    /* background: grey; */
 }
 
 #works {
@@ -163,13 +157,11 @@ body {
 
 .frame {
     margin: 0px;
-    /* height: 300px; */
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     position: relative;
-    /* background: black; */
 }
 
 .overlay {
@@ -231,21 +223,87 @@ body {
 }
 
 @media (max-width: 480px) {
+    /* *********** Header Section *********** */
+
     .container {
         width: 100%;
     }
 
     .header {
-        margin: 20px 10px;
+        margin: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        flex-direction: column;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .menu li {
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    /* *********** Projects Section *********** */
+    .sectiontitle{
+        font-size: 3rem;
+        margin-left: 20px;
+        margin-bottom: 20;;
+    }
+
+    .dots {
+        display: none;
+    }
+
+    .project {
+        position: relative;
+        min-height: 0px;
+        margin: 50px 0;
+        display: flex;
         flex-direction: column;
     }
+    
+    .projectimg {
+        position: relative;
+        right: 0;
+        left: 0;
+        height: 100%;
+        margin-bottom: -5px;
+    }
+    
+    .projectimg img {
+        object-fit: cover;
+        max-width: 100%;
+        max-height: 100%;
+        border: solid rgb(117, 117, 117) 0;
+        background-color: rgb(117, 117, 117);
+    }
+    
+    .info {
+        background-color: white;
+        position: relative;
+        max-width: 100%;
+        box-shadow: 0 0 25px rgba(0, 0, 0, .3);
+        padding: 30px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+    
+    #works {
+        margin: 50px 0px;
+    }
+
+    /* *********** Art Section *********** */
 
     .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
         /* grid-template-rows: 1fr 1fr 1fr; */
         grid-auto-rows: 1fr;
-        margin: 30px -5px;
+        margin: 30px 0px;
         overflow: hidden;
     }
 }
