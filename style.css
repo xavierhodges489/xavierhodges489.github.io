@@ -107,8 +107,9 @@ a:active {
     object-fit: cover;
     max-width: 85%;
     max-height: 100%;
-    border: solid rgb(117, 117, 117) 18px;
+    border: solid rgb(117, 117, 117) 20px;
     background-color: rgb(117, 117, 117);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .3);
 }
 
 .info {
@@ -158,6 +159,7 @@ a:active {
     grid-auto-rows: 1fr;
     margin: 30px 0px;
     overflow: hidden;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .5);
 }
 
 .wrapper::before {
@@ -260,17 +262,18 @@ a:active {
     }
 
     .menu li {
-        margin: 0;
-        padding: 10px 0;
+        margin: 10px 0px 0px -10px;
+        padding: 10px 10px;
     }
 
     /* *********** Projects Section *********** */
     .sectiontitle{
-        font-size: 3rem;
-        margin-left: 20px;
-        margin-bottom: 20;;
+        margin: 0px 15px;
     }
 
+    #projects .sectiontitle {
+        margin-bottom: 30px;
+    }
     .dots {
         display: none;
     }
@@ -281,6 +284,10 @@ a:active {
         margin: 50px 0;
         display: flex;
         flex-direction: column;
+    }
+
+    #musicplayer {
+        margin-top: 10px;
     }
     
     .projectimg {
