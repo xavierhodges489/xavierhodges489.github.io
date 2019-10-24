@@ -4,6 +4,8 @@ body {
     font-size: 15px;
 }
 
+/* *********** Links ************ */
+
 a:link {
     text-decoration: none;
     color: black;
@@ -22,17 +24,21 @@ a:active {
     text-decoration: none;
 }
 
+/* *********** Container ************ */
+
 .container {
     width: 60%;
     margin: auto;
     position: relative;
 }
 
+/* *********** Header ************ */
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 50px;
+    margin: 30px 0;
 }
 
 .header h1 {
@@ -63,27 +69,34 @@ a:active {
     box-shadow: 0 0 10px rgba(0, 0, 0, .15);
 }
 
+/* *********** Section Title ************ */
+
 .sectiontitle {
-    font-size: 4.2rem;
+    font-size: 8rem;
     font-weight: 100;
+    margin: 0;
+    padding: 0;
 }
 
+/* *********** Projects ************ */
+
 #projects {
-    margin: 100px 0;
+    padding: 100px 0px;
+    background-color: rgb(56, 56, 56);
 }
 
 #projects .sectiontitle {
-    margin-bottom: -50px;
+    margin-bottom: 100px;
+    color: white;
 }
 
 .dots {
     position: absolute;
-    /* top: right; */
     right: 0;
     bottom: 0;
     left: 0;
     top: 60px;
-    background-image: radial-gradient(rgb(202, 202, 202) 7%, transparent 7%);
+    background-image: radial-gradient(rgb(165, 165, 165) 7%, transparent 7%);
     background-size: 50px 50px;
     background-position-y: 0px;
 }
@@ -97,18 +110,19 @@ a:active {
 .projectimg {
     position: absolute;
     top: 0;
-    bottom: 80px;
+    right: 100px;
+    bottom: 40px;
     left: 100px;
-    min-width: 0;
-
+    display: flex;
+    justify-content: start;
 }
 
 .projectimg img {
     object-fit: cover;
     max-width: 85%;
     max-height: 100%;
-    border: solid rgb(117, 117, 117) 20px;
-    background-color: rgb(117, 117, 117);
+    border: solid rgb(255, 255, 255) 20px;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 0 15px rgba(0, 0, 0, .3);
 }
 
@@ -118,12 +132,22 @@ a:active {
     max-width: 250px;
     bottom: 0px;
     left: 0px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 25px rgba(0, 0, 0, .5);
     padding: 30px;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
 }
+
+.project:nth-child(odd) .projectimg {
+    justify-content: flex-end;
+}
+
+.project:nth-child(odd) .info {
+    left: auto;
+    right: 0px;
+}
+
 
 .info > * {
     margin: 8px 0;
@@ -148,6 +172,9 @@ a:active {
     height: auto;
     margin: 0 30px;
 }
+
+/* *********** Art ************ */
+
 
 #works {
     margin: 50px 0px;
@@ -231,6 +258,8 @@ a:active {
     opacity: 1;
 }
 
+/* *********** Contact ************ */
+
 #contact {
     margin: 50px 0px;
 }
@@ -239,6 +268,11 @@ a:active {
 
     .container {
         width: 90%;
+    }
+
+    .projectimg {
+        right: 30px;
+        left: 30px;
     }
 }
 
@@ -269,6 +303,7 @@ a:active {
     /* *********** Projects Section *********** */
     .sectiontitle{
         margin: 0px 15px;
+        font-size: 5em;
     }
 
     #projects .sectiontitle {
