@@ -72,10 +72,27 @@ a:active {
 /* *********** Section Title ************ */
 
 .sectiontitle {
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 100;
     margin: 0;
     padding: 0;
+}
+
+/* *********** About ************ */
+#about {
+    min-height: 100vh;
+    background-color: rgb(19, 19, 228);
+}
+
+.intro {
+    width: 80%;
+}
+
+.intro p{
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+    color: rgb(255, 255, 255);
 }
 
 /* *********** Projects ************ */
@@ -178,6 +195,7 @@ a:active {
 
 #works {
     margin: 50px 0px;
+    min-height: 100vh;
 }
 
 .wrapper {
