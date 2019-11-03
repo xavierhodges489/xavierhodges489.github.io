@@ -319,6 +319,21 @@ a:active {
         padding: 10px 10px;
     }
 
+    /* *********** About Section ************ */
+    #about {
+        /* min-height: 100vh; */
+        padding: 50px 0 ;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    .intro p{
+        font-size: 2rem;
+        margin: 0px 15px;
+    }
+
     /* *********** Projects Section *********** */
     .sectiontitle{
         margin: 0px 15px;
