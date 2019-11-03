@@ -38,7 +38,7 @@ a:active {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .header h1 {
@@ -86,7 +86,7 @@ a:active {
 }
 
 .intro {
-    width: 80%;
+    width: 70%;
 }
 
 .intro p{
@@ -100,7 +100,7 @@ a:active {
 
 #projects {
     padding: 100px 0px;
-    background-color: rgb(56, 56, 56);
+    background-color: rgb(12, 12, 12);
 }
 
 #projects .sectiontitle {
@@ -110,9 +110,9 @@ a:active {
 
 .dots {
     position: absolute;
-    right: 0;
+    right: 10px;
     bottom: 0;
-    left: 0;
+    left: 10px;
     top: 60px;
     background-image: radial-gradient(rgb(165, 165, 165) 7%, transparent 7%);
     background-size: 50px 50px;
