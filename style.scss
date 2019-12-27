@@ -2,6 +2,7 @@ html {
   font-size: 16px;
   font-weight: normal;
   font-family: "Poppins", sans-serif;
+
   color: white;
 }
 
@@ -31,7 +32,9 @@ body {
   text-align: right;
   letter-spacing: 0.07em;
   text-transform: uppercase;
+
   color: #f0f0f0;
+
   margin: 0px;
   position: absolute;
   right: 20px;
@@ -41,21 +44,26 @@ body {
 .menu-box {
   margin-right: -1px;
   padding: 20vh 0;
-}
-.menu-box .menu-item {
-  font-weight: normal;
-  font-size: 18px;
-  text-align: right;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: #767676;
-  padding: 5px 0;
-  margin: 30px 0;
-}
-.menu-box .menu-item-bold {
-  font-weight: bold;
-  color: #ff3939;
-  border-right: solid 2px #ff3939;
+
+  .menu-item {
+    font-weight: normal;
+    font-size: 18px;
+    text-align: right;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+
+    color: #767676;
+
+    padding: 5px 0;
+    margin: 30px 0;
+  }
+
+  .menu-item-bold {
+    font-weight: bold;
+
+    color: #ff3939;
+    border-right: solid 2px #ff3939;
+  }
 }
 
 .item-title {
@@ -73,6 +81,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   height: 100vh;
   margin: auto;
   width: 80%;
@@ -84,6 +93,7 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 960px;
+
   position: absolute;
   bottom: 20px;
 }
@@ -111,6 +121,7 @@ body {
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 2px;
+
   margin-bottom: 15px;
 }
 
@@ -138,99 +149,117 @@ body {
   width: 100%;
   position: relative;
   margin: 250px 0;
-}
-.project .project-content {
-  position: relative;
-  width: 80%;
-  margin: auto;
-  z-index: 3;
-  display: flex;
-  align-items: flex-end;
-}
-.project .project-content .project-img {
-  width: 650px;
-  min-width: 350px;
-  position: relative;
-  margin: 0 50px;
-}
-.project .project-content .project-img img {
-  position: absolute;
-  width: 100%;
-  bottom: 30px;
-}
-.project .project-content .info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 360px;
-  padding: 30px 0;
-}
-.project .project-content .info .project-title {
-  font-weight: bold;
-  font-size: 32px;
-  color: #e7e7e7;
-  margin: 0;
-}
-.project .project-content .info .description {
-  font-weight: 500;
-  font-size: 16px;
-  color: #a8a8a8;
-}
-.project .project-content .info .links {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-size: 13px;
-  height: 45px;
-  color: #3b92b7;
-}
-.project .project-content .info .links a:link {
-  color: currentColor;
-  text-decoration: none;
-}
-.project .project-content .info .links a:visited {
-  color: currentColor;
-}
-.project .project-content .info .links .github {
-  display: flex;
-  align-items: center;
-}
-.project .project-content .info .links svg {
-  fill: currentColor;
-  margin-left: 10px;
-}
-.project .lines {
-  position: absolute;
-  top: -25px;
-  bottom: 0;
-  right: 10%;
-  left: 10%;
-  border-top: solid 1px #727272;
-  border-bottom: solid 1px #727272;
-  z-index: 2;
-}
-.project .backdrop {
-  position: absolute;
-  top: 0px;
-  bottom: -25px;
-  right: 0;
-  left: 0;
-  background-color: #151515;
-  z-index: 1;
+
+  .project-content {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    z-index: 3;
+    display: flex;
+    align-items: flex-end;
+
+    .project-img {
+      width: 650px;
+      min-width: 350px;
+      position: relative;
+      margin: 0 50px;
+
+      img {
+        position: absolute;
+        width: 100%;
+        bottom: 30px;
+      }
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 360px;
+      padding: 30px 0;
+
+      .project-title {
+        font-weight: bold;
+        font-size: 32px;
+        color: #e7e7e7;
+        margin: 0;
+      }
+
+      .description {
+        font-weight: 500;
+        font-size: 16px;
+        color: #a8a8a8;
+      }
+
+      .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 13px;
+        height: 45px;
+        color: #3b92b7;
+
+        a:link {
+          color: currentColor;
+          text-decoration: none;
+        }
+
+        a:visited {
+          color: currentColor;
+        }
+
+        .github {
+          display: flex;
+          align-items: center;
+        }
+
+        svg {
+          fill: currentColor;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .lines {
+    position: absolute;
+    top: -25px;
+    bottom: 0;
+    right: 10%;
+    left: 10%;
+    border-top: solid 1px #727272;
+    border-bottom: solid 1px #727272;
+    z-index: 2;
+  }
+
+  .backdrop {
+    position: absolute;
+    top: 0px;
+    bottom: -25px;
+    right: 0;
+    left: 0;
+    background-color: #151515;
+    z-index: 1;
+  }
 }
 
-.project:nth-child(odd) .project-content {
-  flex-direction: row-reverse;
-}
-.project:nth-child(odd) .project-content .info {
-  text-align: right;
-}
-.project:nth-child(odd) .project-content .info .links {
-  align-items: flex-end;
-  color: #a55e5e;
+.project:nth-child(odd) {
+  .project-content {
+    flex-direction: row-reverse;
+
+    .info {
+      text-align: right;
+
+      .links {
+        align-items: flex-end;
+        color: #a55e5e;
+      }
+    }
+  }
 }
 
 /* *********** Art ************ */
+
 #works {
   margin: 50px 0px;
   min-height: 100vh;
@@ -248,13 +277,13 @@ body {
   content: "";
   width: 0;
   padding-bottom: 100%;
-  grid-row: 1/1;
-  grid-column: 1/1;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
 }
 
 .wrapper > *:first-child {
-  grid-row: 1/1;
-  grid-column: 1/1;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
 }
 
 .frame {
@@ -273,6 +302,7 @@ body {
   bottom: 0;
   left: 0;
   background: black;
+
   opacity: 0;
   -moz-transition: all 0.2s;
   -webkit-transition: all 0.2s;
@@ -301,6 +331,7 @@ body {
   font-weight: 500;
   bottom: 16px;
   left: 24px;
+
   opacity: 0;
   -moz-transition: all 0.2s;
   -webkit-transition: all 0.2s;
@@ -311,4 +342,8 @@ body {
   opacity: 1;
 }
 
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+}
