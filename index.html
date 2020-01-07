@@ -22,23 +22,31 @@
           </h1>
         </div>
         <div class="menu-box">
-          <div class="menu-item ">
-            <span class="item-title">About</span>
-          </div>
-          <div class="menu-item menu-item-bold">
-            <span class="item-title">Projects</span>
-          </div>
-          <div class="menu-item">
-            <span class="item-title">Art</span>
-          </div>
-          <div class="menu-item">
-            <span class="item-title">Contact</span>
-          </div>
+          <a href="#about"
+            ><div class="menu-item" data-section="about">
+              <span class="item-title">About</span>
+            </div></a
+          >
+          <a href="#projects"
+            ><div class="menu-item" data-section="projects">
+              <span class="item-title">Projects</span>
+            </div></a
+          >
+          <a href="#art"
+            ><div class="menu-item" data-section="art">
+              <span class="item-title">Art</span>
+            </div></a
+          >
+          <a href="#contact"
+            ><div class="menu-item" data-section="contact">
+              <span class="item-title">Contact</span>
+            </div></a
+          >
         </div>
       </div>
       <div class="content">
-        <div class="about-container">
-          <div class="about">
+        <div id="about" class="section">
+          <div class="about-container">
             <p class="intro">
               Hi, I'm a computer science major who
               <span class="blue">loves</span> programming design &amp; animation
@@ -61,20 +69,25 @@
             </div>
           </div>
         </div>
-        <div class="projects">
+        <div id="projects" class="section">
           <h1 class="section-title">Projects</h1>
           <div class="project">
             <div class="project-content">
               <div class="project-img">
-                <img src="images/oursongs.png" alt="our songs screenshot" />
+                <img
+                  class="anim"
+                  data-delay="0s"
+                  src="images/oursongs.png"
+                  alt="our songs screenshot"
+                />
               </div>
               <div class="info">
-                <h2 class="project-title">OurSongs</h2>
-                <p class="description">
+                <h2 class="project-title anim" data-delay="0s">OurSongs</h2>
+                <p class="description anim" data-delay=".2s">
                   A website for sharing, discussing music and creating community
                   playlists. Built with React and Express.js.
                 </p>
-                <div class="links">
+                <div class="links anim" data-delay=".4s">
                   <a
                     href="https://oursongs.herokuapp.com"
                     oursongs.herokuapp.com
@@ -109,17 +122,19 @@
             <div class="project-content">
               <div class="project-img">
                 <img
+                  class="anim"
+                  data-delay="0s"
                   src="images/musicplayergui.PNG"
                   alt="our songs screenshot"
                 />
               </div>
               <div class="info">
-                <h2 class="project-title">Music Player</h2>
-                <p class="description">
+                <h2 class="project-title anim" data-delay="0s">Music Player</h2>
+                <p class="description anim" data-delay=".2s">
                   A WPF application to play music files and explore different
                   object-oriented design patterns
                 </p>
-                <div class="links">
+                <div class="links anim" data-delay=".4s">
                   <a
                     class="github"
                     href="https://github.com/xavierhodges489/MusicPlayer"
@@ -148,17 +163,21 @@
             <div class="project-content">
               <div class="project-img">
                 <img
+                  class="anim"
+                  data-delay="0s"
                   src="images/illustratorExporterGUI.png"
                   alt="our songs screenshot"
                 />
               </div>
               <div class="info">
-                <h2 class="project-title">Illustrator Exporter</h2>
-                <p class="description">
+                <h2 class="project-title anim" data-delay="0s">
+                  Illustrator Exporter
+                </h2>
+                <p class="description anim" data-delay=".2s">
                   A JavaScript script to export multiple artboards from
                   Illustrator for Georgia Southern CRI
                 </p>
-                <div class="links">
+                <div class="links anim" data-delay=".4s">
                   <a
                     class="github"
                     href="https://github.com/xavierhodges489/IllustratorExporter"
@@ -184,185 +203,223 @@
             <div class="backdrop"></div>
           </div>
         </div>
-        <h1 class="section-title">Art</h1>
-        <div class="wrapper">
-          <div class="frame">
-            <p>Sleepless</p>
-            <div class="overlay"></div>
-            <img
-              style="background-image: url('https://mir-cdn.behance.net/v1/rendition/project_modules/2800_opt_1/c1b02e62418363.5a8f56061e313.jpg')"
-              src="images/blanksquare.png"
-              alt=""
-            />
-          </div>
+        <div id="art" class="section">
+          <h1 class="section-title">Art</h1>
+          <div class="wrapper">
+            <div class="frame">
+              <p>Sleepless</p>
+              <div class="overlay"></div>
+              <img
+                style="background-image: url('https://mir-cdn.behance.net/v1/rendition/project_modules/2800_opt_1/c1b02e62418363.5a8f56061e313.jpg')"
+                src="images/blanksquare.png"
+                alt=""
+              />
+            </div>
 
-          <div class="frame">
-            <p>Office</p>
-            <div class="overlay"></div>
-            <img
-              style="background-image: url('https://mir-cdn.behance.net/v1/rendition/project_modules/max_1200/447dbf62416125.5a8f419a6b140.png')"
-              src="images/blanksquare.png"
-              alt=""
-            />
-          </div>
+            <div class="frame">
+              <p>Office</p>
+              <div class="overlay"></div>
+              <img
+                style="background-image: url('https://mir-cdn.behance.net/v1/rendition/project_modules/max_1200/447dbf62416125.5a8f419a6b140.png')"
+                src="images/blanksquare.png"
+                alt=""
+              />
+            </div>
 
-          <div class="frame">
-            <p>CRI Marketing</p>
-            <div class="overlay"></div>
-            <img
-              style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/e0422076929675.5c782838226a7.png')"
-              src="images/blanksquare.png"
-              alt=""
-            />
-          </div>
+            <div class="frame">
+              <p>CRI Marketing</p>
+              <div class="overlay"></div>
+              <img
+                style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/e0422076929675.5c782838226a7.png')"
+                src="images/blanksquare.png"
+                alt=""
+              />
+            </div>
 
-          <div class="frame">
-            <p>Vanity</p>
-            <div class="overlay"></div>
-            <img
-              style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8bfc5462416311.5a8f4329b7715.jpg')"
-              src="images/blanksquare.png"
-              alt=""
-            />
-          </div>
+            <div class="frame">
+              <p>Vanity</p>
+              <div class="overlay"></div>
+              <img
+                style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8bfc5462416311.5a8f4329b7715.jpg')"
+                src="images/blanksquare.png"
+                alt=""
+              />
+            </div>
 
-          <div class="frame">
-            <p>Monorail</p>
-            <div class="overlay"></div>
-            <img
-              style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/be8c0d62416371.5a8f43862bd96.jpg')"
-              src="images/blanksquare.png"
-              alt=""
-            />
-          </div>
+            <div class="frame">
+              <p>Monorail</p>
+              <div class="overlay"></div>
+              <img
+                style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/be8c0d62416371.5a8f43862bd96.jpg')"
+                src="images/blanksquare.png"
+                alt=""
+              />
+            </div>
 
-          <div class="frame">
-            <p>Poly Planet</p>
-            <div class="overlay"></div>
-            <img
-              style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ac896b62416395.5a8f43cd73988.png')"
-              src="images/blanksquare.png"
-              alt=""
-            />
-          </div>
+            <div class="frame">
+              <p>Poly Planet</p>
+              <div class="overlay"></div>
+              <img
+                style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ac896b62416395.5a8f43cd73988.png')"
+                src="images/blanksquare.png"
+                alt=""
+              />
+            </div>
 
-          <div class="frame">
-            <p>Bogie</p>
-            <div class="overlay"></div>
-            <img
-              style="background-image: url('https://mir-cdn.behance.net/v1/rendition/project_modules/max_1200/3e2ac662418303.5a8f55411e53b.jpg')"
-              src="images/blanksquare.png"
-              alt=""
-            />
-          </div>
+            <div class="frame">
+              <p>Bogie</p>
+              <div class="overlay"></div>
+              <img
+                style="background-image: url('https://mir-cdn.behance.net/v1/rendition/project_modules/max_1200/3e2ac662418303.5a8f55411e53b.jpg')"
+                src="images/blanksquare.png"
+                alt=""
+              />
+            </div>
 
-          <div class="frame">
-            <p>Beta Club</p>
-            <div class="overlay"></div>
-            <img
-              style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/11cfa162418413.5a8f569b3e39a.jpg')"
-              src="images/blanksquare.png"
-              alt=""
-            />
+            <div class="frame">
+              <p>Beta Club</p>
+              <div class="overlay"></div>
+              <img
+                style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/11cfa162418413.5a8f569b3e39a.jpg')"
+                src="images/blanksquare.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div id="contact" class="section">
+          <div class="centered">
+            <h1 class="section-title">Contact</h1>
+            <div class="container">
+              <div class="contact-items">
+                <div class="contact-item">
+                  <span>xavierhodges489@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                  <span>(678) 200-0969</span>
+                </div>
+                <a
+                  class="contact-item contact-social"
+                  href="https://github.com/xavierhodges489"
+                >
+                  <svg
+                    width="35"
+                    height="35"
+                    viewBox="0 0 35 35"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.5 0C7.83569 0 0 7.83569 0 17.5C0 25.2332 5.01375 31.7914 11.9682 34.1049C12.843 34.2651 13.1624 33.7247 13.1624 33.2632C13.1624 32.8466 13.1464 31.4667 13.1378 30.0055C8.27148 31.0629 7.24288 27.9419 7.24288 27.9419C6.44608 25.921 5.29997 25.3827 5.29997 25.3827C3.70956 24.2975 5.42062 24.3188 5.42062 24.3188C7.17767 24.4406 8.1027 26.1218 8.1027 26.1218C9.66431 28.7964 12.2 28.0231 13.1955 27.5745C13.3546 26.4465 13.8074 25.6732 14.3063 25.2374C10.4216 24.7952 6.335 23.2935 6.335 16.5878C6.335 14.6759 7.01753 13.1165 8.13477 11.8913C7.95638 11.447 7.35396 9.66643 8.30778 7.25785C8.30778 7.25785 9.77539 6.78788 13.1207 9.05228C14.5156 8.66243 16.0121 8.47017 17.5 8.46375C18.9868 8.47017 20.4843 8.66455 21.8814 9.0544C25.2203 6.78788 26.6901 7.25997 26.6901 7.25997C27.6471 9.6707 27.0447 11.4491 26.8652 11.8913C27.9867 13.1165 28.6639 14.6759 28.6639 16.5878C28.6639 23.3105 24.5709 24.7909 20.6723 25.2246C21.3025 25.7672 21.8601 26.8311 21.8601 28.4631C21.8601 30.8023 21.8365 32.6886 21.8365 33.2654C21.8365 33.7311 22.1548 34.2758 23.0414 34.1049C29.9906 31.7871 35 25.2289 35 17.5C35 7.83569 27.1643 0 17.5 0Z"
+                      fill="#E7E7E7"
+                    />
+                  </svg>
+
+                  <span>GitHub</span>
+                </a>
+                <a
+                  class="contact-item contact-social"
+                  href="https://www.behance.net/xavierhodges"
+                >
+                  <svg
+                    width="35"
+                    height="22"
+                    viewBox="0 0 35 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.79895 17.6953C10.2653 17.6953 10.7094 17.6549 11.1269 17.5636C11.551 17.474 11.9263 17.3302 12.2444 17.1186C12.5608 16.915 12.8242 16.6356 13.0148 16.2818C13.2062 15.9297 13.2981 15.4725 13.2981 14.9209C13.2981 13.8394 12.985 13.0705 12.3645 12.6045C11.7416 12.1441 10.9123 11.9156 9.8926 11.9156H4.73918V17.6953H9.79895V17.6953ZM9.5364 8.76078C10.3755 8.76078 11.0714 8.5669 11.6223 8.17275C12.1673 7.78426 12.4307 7.14379 12.4307 6.26345C12.4307 5.77559 12.3438 5.37178 12.1673 5.0584C11.9842 4.74503 11.7416 4.5003 11.4367 4.32822C11.1335 4.14974 10.7905 4.02697 10.3938 3.95993C10.0027 3.88561 9.59436 3.85656 9.17439 3.85656H4.73918V8.76078H9.5364V8.76078ZM10.1494 0.280945C11.1791 0.280945 12.1085 0.367386 12.9576 0.547533C13.8026 0.721948 14.5224 1.01353 15.1321 1.41334C15.7319 1.81316 16.2016 2.3446 16.5379 3.01414C16.8651 3.67401 17.03 4.5003 17.03 5.47674C17.03 6.53317 16.7847 7.41597 16.2919 8.1219C15.7965 8.82616 15.0683 9.40365 14.0966 9.85272C15.4196 10.2243 16.4021 10.8777 17.0523 11.8073C17.706 12.7434 18.0265 13.8629 18.0265 15.1761C18.0265 16.2406 17.8178 17.1566 17.3994 17.9279C16.9778 18.7081 16.4037 19.3405 15.6962 19.8284C14.983 20.3202 14.1654 20.6821 13.2476 20.9171C12.3405 21.1513 11.3986 21.2701 10.4327 21.2701H0V0.280945H10.1494V0.280945Z"
+                      fill="#E7E7E7"
+                    />
+                    <path
+                      d="M29.7037 9.64031C29.1942 9.09188 28.3335 8.7947 27.2823 8.7947C26.5981 8.7947 26.0323 8.90693 25.5783 9.13553C25.1343 9.36166 24.7715 9.64191 24.4939 9.97308C24.2172 10.3091 24.0301 10.6645 23.9199 11.044C23.8105 11.414 23.7443 11.7492 23.7252 12.0456H30.6903C30.5884 10.9811 30.2148 10.1936 29.7037 9.64031V9.64031ZM24.7839 17.6258C25.4259 18.2364 26.3528 18.5434 27.554 18.5434C28.4172 18.5434 29.1627 18.3309 29.789 17.9061C30.4095 17.4821 30.7872 17.0289 30.933 16.5589H34.7038C34.0974 18.3883 33.1788 19.6943 31.9237 20.481C30.6836 21.2701 29.1727 21.6634 27.4107 21.6634C26.183 21.6634 25.078 21.4696 24.0856 21.0883C23.0939 20.7014 22.2656 20.1603 21.5681 19.4536C20.8888 18.7444 20.3611 17.9061 19.9851 16.9215C19.6131 15.9418 19.4259 14.8571 19.4259 13.6819C19.4259 12.5455 19.6206 11.4842 20.0016 10.5029C20.3893 9.51835 20.9277 8.66867 21.6343 7.95635C22.3426 7.23989 23.1818 6.67452 24.1593 6.26098C25.1376 5.8499 26.2162 5.64316 27.4107 5.64316C28.7295 5.64316 29.8834 5.89029 30.8741 6.39427C31.86 6.89179 32.6693 7.56539 33.3047 8.40861C33.9392 9.25023 34.3923 10.2129 34.6748 11.2928C34.9548 12.371 35.0534 13.497 34.973 14.6762H23.7252C23.7252 15.878 24.1411 17.0152 24.7839 17.6258V17.6258Z"
+                      fill="#E7E7E7"
+                    />
+                    <path
+                      d="M31.5741 1.68951H22.8479V3.76037H31.5741V1.68951Z"
+                      fill="#E7E7E7"
+                    />
+                  </svg>
+
+                  <span>Behance</span>
+                </a>
+                <a
+                  class="contact-item contact-social"
+                  href="https://www.instagram.com/xavier.hodges/"
+                >
+                  <svg
+                    width="35"
+                    height="36"
+                    viewBox="0 0 35 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.5 0.56665C12.7473 0.56665 12.1513 0.586796 10.2848 0.671961C8.4221 0.756988 7.14996 1.05278 6.03677 1.48541C4.88599 1.93264 3.91005 2.53102 2.93718 3.5039C1.9643 4.47677 1.36592 5.45271 0.918693 6.60349C0.486056 7.71661 0.190268 8.98875 0.105242 10.8514C0.0200758 12.718 0 13.3139 0 18.0667C0 22.8194 0.0200758 23.4153 0.105242 25.2819C0.190268 27.1446 0.486056 28.4167 0.918693 29.5298C1.36592 30.6806 1.9643 31.6565 2.93718 32.6295C3.91005 33.6023 4.88599 34.2007 6.03677 34.648C7.14996 35.0805 8.4221 35.3764 10.2848 35.4613C12.1513 35.5465 12.7473 35.5667 17.5 35.5667C22.2527 35.5667 22.8487 35.5465 24.7152 35.4613C26.5779 35.3764 27.85 35.0805 28.9632 34.648C30.1139 34.2007 31.0899 33.6023 32.0628 32.6295C33.0357 31.6565 33.6341 30.6806 34.0813 29.5298C34.5139 28.4167 34.8097 27.1446 34.8947 25.2819C34.9799 23.4153 35 22.8194 35 18.0667C35 13.3139 34.9799 12.718 34.8947 10.8514C34.8097 8.98875 34.5139 7.71661 34.0813 6.60349C33.6341 5.45271 33.0357 4.47677 32.0628 3.5039C31.0899 2.53102 30.1139 1.93264 28.9632 1.48541C27.85 1.05278 26.5779 0.756988 24.7152 0.671961C22.8487 0.586796 22.2527 0.56665 17.5 0.56665ZM17.5 3.71987C22.1727 3.71987 22.7262 3.73765 24.5715 3.82184C26.2777 3.89972 27.2043 4.18481 27.821 4.4244C28.6379 4.74186 29.2208 5.12114 29.8332 5.73349C30.4456 6.34584 30.8248 6.92887 31.1423 7.74565C31.3819 8.3623 31.667 9.28892 31.7448 10.9951C31.829 12.8405 31.8469 13.394 31.8469 18.0667C31.8469 22.7393 31.829 23.2928 31.7448 25.1382C31.667 26.8444 31.3819 27.771 31.1423 28.3876C30.8248 29.2045 30.4456 29.7875 29.8332 30.3998C29.2208 31.0122 28.6379 31.3914 27.821 31.7089C27.2043 31.9486 26.2777 32.2337 24.5715 32.3115C22.7265 32.3957 22.173 32.4135 17.5 32.4135C12.827 32.4135 12.2736 32.3957 10.4285 32.3115C8.72227 32.2337 7.79565 31.9486 7.179 31.7089C6.36215 31.3914 5.77918 31.0122 5.16677 30.3998C4.55442 29.7875 4.17514 29.2045 3.85774 28.3876C3.61809 27.771 3.333 26.8444 3.25512 25.1382C3.17093 23.2928 3.15315 22.7393 3.15315 18.0667C3.15315 13.394 3.17093 12.8405 3.25512 10.9951C3.333 9.28892 3.61809 8.3623 3.85774 7.74565C4.17514 6.92887 4.55442 6.34584 5.16677 5.73349C5.77918 5.12114 6.36215 4.74186 7.179 4.4244C7.79565 4.18481 8.72227 3.89972 10.4285 3.82184C12.2738 3.73765 12.8273 3.71987 17.5 3.71987Z"
+                      fill="#E7E7E7"
+                    />
+                    <path
+                      d="M17.4981 23.8999C14.2764 23.8999 11.6647 21.2883 11.6647 18.0666C11.6647 14.8449 14.2764 12.2332 17.4981 12.2332C20.7198 12.2332 23.3314 14.8449 23.3314 18.0666C23.3314 21.2883 20.7198 23.8999 17.4981 23.8999ZM17.4981 9.0801C12.5349 9.0801 8.5116 13.1035 8.5116 18.0666C8.5116 23.0297 12.5349 27.0531 17.4981 27.0531C22.4612 27.0531 26.4846 23.0297 26.4846 18.0666C26.4846 13.1035 22.4612 9.0801 17.4981 9.0801Z"
+                      fill="#E7E7E7"
+                    />
+                    <path
+                      d="M28.9437 8.72517C28.9437 9.88498 28.0034 10.8251 26.8436 10.8251C25.6839 10.8251 24.7437 9.88498 24.7437 8.72517C24.7437 7.56536 25.6839 6.6252 26.8436 6.6252C28.0034 6.6252 28.9437 7.56536 28.9437 8.72517Z"
+                      fill="#E7E7E7"
+                    />
+                  </svg>
+
+                  <span>Instagram</span>
+                </a>
+              </div>
+              <form action=""></form>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <script>
+      const menuItems = document.querySelectorAll(".menu-item");
 
-    <!-- <section id="projects"></section>
+      const menuObserver = new IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting === true) {
+              menuItems.forEach(item => {
+                item.classList.remove("menu-item-bold");
 
-    <section id="works"> -->
-    <!-- <div class="container">
-        <h1 class="sectiontitle">Art</h1>
-        <div class="wrapper">
-          <div class="frame">
-            <p>Sleepless</p>
-            <div class="overlay"></div>
-            <img
-              style="background-image: url('https://mir-cdn.behance.net/v1/rendition/project_modules/2800_opt_1/c1b02e62418363.5a8f56061e313.jpg')"
-              src="images/blanksquare.png"
-              alt=""
-            />
-          </div>
+                if (item.dataset.section === entry.target.id) {
+                  item.classList.add("menu-item-bold");
+                }
+              });
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
 
-          <div class="frame">
-            <p>Office</p>
-            <div class="overlay"></div>
-            <img
-              style="background-image: url('https://mir-cdn.behance.net/v1/rendition/project_modules/max_1200/447dbf62416125.5a8f419a6b140.png')"
-              src="images/blanksquare.png"
-              alt=""
-            />
-          </div>
+      const sections = document.querySelectorAll(".section");
+      sections.forEach(section => {
+        menuObserver.observe(section);
+      });
 
-          <div class="frame">
-            <p>CRI Marketing</p>
-            <div class="overlay"></div>
-            <img
-              style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/e0422076929675.5c782838226a7.png')"
-              src="images/blanksquare.png"
-              alt=""
-            />
-          </div>
+      const animObserver = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting === true) {
+              console.log("animating");
+              entry.target.style.animation = `anim1 .7s ${entry.target.dataset.delay} forwards ease-out`;
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { rootMargin: "0% 0% -10% 0%", threshold: 0.5 }
+      );
 
-          <div class="frame">
-            <p>Vanity</p>
-            <div class="overlay"></div>
-            <img
-              style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8bfc5462416311.5a8f4329b7715.jpg')"
-              src="images/blanksquare.png"
-              alt=""
-            />
-          </div>
-
-          <div class="frame">
-            <p>Monorail</p>
-            <div class="overlay"></div>
-            <img
-              style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/be8c0d62416371.5a8f43862bd96.jpg')"
-              src="images/blanksquare.png"
-              alt=""
-            />
-          </div>
-
-          <div class="frame">
-            <p>Poly Planet</p>
-            <div class="overlay"></div>
-            <img
-              style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ac896b62416395.5a8f43cd73988.png')"
-              src="images/blanksquare.png"
-              alt=""
-            />
-          </div>
-
-          <div class="frame">
-            <p>Bogie</p>
-            <div class="overlay"></div>
-            <img
-              style="background-image: url('https://mir-cdn.behance.net/v1/rendition/project_modules/max_1200/3e2ac662418303.5a8f55411e53b.jpg')"
-              src="images/blanksquare.png"
-              alt=""
-            />
-          </div>
-
-          <div class="frame">
-            <p>Beta Club</p>
-            <div class="overlay"></div>
-            <img
-              style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/11cfa162418413.5a8f569b3e39a.jpg')"
-              src="images/blanksquare.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </div> 
-    </section>-->
-
-    <!-- <section id="contact">
-        <div class="container">
-            <h1 class="sectiontitle">Contact</h1>
-        </div>
-        
-    </section> -->
+      const animations = document.querySelectorAll(".anim");
+      animations.forEach(animation => {
+        animObserver.observe(animation);
+      });
+    </script>
   </body>
 </html>
