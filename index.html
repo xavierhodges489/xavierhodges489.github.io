@@ -34,7 +34,7 @@
           >
           <a href="#art"
             ><div class="menu-item" data-section="art">
-              <span class="item-title">Art</span>
+              <span class="item-title">Design</span>
             </div></a
           >
           <a href="#contact"
@@ -48,10 +48,10 @@
         <div id="about" class="section">
           <div class="about-container">
             <p class="intro">
-              Hi, I'm a computer science major who
-              <span class="blue">loves</span> programming design &amp; animation
+              Hi, I'm a computer science major and I like programming, design
+              &amp; animation
             </p>
-            <div class="view-more">
+            <!-- <div class="view-more">
               <span>View More</span>
               <svg
                 width="14"
@@ -66,7 +66,7 @@
                   d="M13.8115 17.251L6.99999 26.7114L0.188456 17.251L1.81152 16.0824L5.99999 21.8997L5.99999 -3.41453e-07L7.99999 -2.5403e-07L7.99999 21.8997L12.1885 16.0824L13.8115 17.251Z"
                 />
               </svg>
-            </div>
+            </div> -->
           </div>
         </div>
         <div id="projects" class="section">
@@ -98,6 +98,47 @@
                     class="github"
                     href="https://github.com/xavierhodges489/our-songs-project"
                     ><span>View project on GitHub</span
+                    ><svg
+                      width="21"
+                      height="12"
+                      viewBox="0 0 21 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13.3049 0.603699L20.3201 6.00001L13.3049 11.3963L12.6951 10.6037L18.0299 6.50001H0V5.50001H18.0299L12.6951 1.39632L13.3049 0.603699Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="lines"></div>
+            <div class="backdrop"></div>
+          </div>
+          <div class="project">
+            <div class="project-content">
+              <div class="project-img">
+                <img
+                  class="anim"
+                  data-delay="0s"
+                  src="images/dollsbyandi-home-deskop.png"
+                  alt="dolls by andi screenshot"
+                />
+              </div>
+              <div class="info">
+                <h2 class="project-title anim" data-delay="0s">
+                  Dolls By Andi
+                </h2>
+                <p class="description anim" data-delay=".2s">
+                  A clean, responsive e-commerce website design for premium
+                  dolls. Prototyped with figma.
+                </p>
+                <div class="links anim" data-delay=".4s">
+                  <a class="github" href="projects/dollsbyandi.html"
+                    ><span>View project</span
                     ><svg
                       width="21"
                       height="12"
@@ -159,7 +200,7 @@
             <div class="lines"></div>
             <div class="backdrop"></div>
           </div>
-          <div class="project">
+          <!-- <div class="project">
             <div class="project-content">
               <div class="project-img">
                 <img
@@ -201,26 +242,54 @@
             </div>
             <div class="lines"></div>
             <div class="backdrop"></div>
-          </div>
+          </div> -->
         </div>
         <div id="art" class="section">
-          <h1 class="section-title">Art</h1>
+          <h1 class="section-title">Design</h1>
           <div class="wrapper">
-            <div class="frame">
-              <p>Sleepless</p>
-              <div class="overlay"></div>
-              <img
-                style="background-image: url('https://mir-cdn.behance.net/v1/rendition/project_modules/2800_opt_1/c1b02e62418363.5a8f56061e313.jpg')"
-                src="images/blanksquare.png"
-                alt=""
-              />
-            </div>
+            <a href="art/landshark.html">
+              <div class="frame">
+                <p>Land Shark</p>
+                <div class="overlay"></div>
+                <img
+                  class="lazy-art"
+                  data-lazy="images/landshark.png"
+                  src="images/blanksquare.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <a href="art/sleepless.html">
+              <div class="frame">
+                <p>Sleepless</p>
+                <div class="overlay"></div>
+
+                <img
+                  class="lazy-art"
+                  data-lazy="https://mir-cdn.behance.net/v1/rendition/project_modules/2800_opt_1/c1b02e62418363.5a8f56061e313.jpg"
+                  src="images/blanksquare.png"
+                  alt=""
+                /></div
+            ></a>
+            <a href="art/gears.html">
+              <div class="frame">
+                <p>Gears</p>
+                <div class="overlay"></div>
+
+                <img
+                  class="lazy-art"
+                  data-lazy="images/gears.png"
+                  src="images/blanksquare.png"
+                  alt=""
+                /></div
+            ></a>
 
             <div class="frame">
               <p>Office</p>
               <div class="overlay"></div>
               <img
-                style="background-image: url('https://mir-cdn.behance.net/v1/rendition/project_modules/max_1200/447dbf62416125.5a8f419a6b140.png')"
+                class="lazy-art"
+                data-lazy="https://mir-cdn.behance.net/v1/rendition/project_modules/max_1200/447dbf62416125.5a8f419a6b140.png"
                 src="images/blanksquare.png"
                 alt=""
               />
@@ -230,7 +299,8 @@
               <p>CRI Marketing</p>
               <div class="overlay"></div>
               <img
-                style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/e0422076929675.5c782838226a7.png')"
+                class="lazy-art"
+                data-lazy="https://mir-s3-cdn-cf.behance.net/project_modules/fs/e0422076929675.5c782838226a7.png"
                 src="images/blanksquare.png"
                 alt=""
               />
@@ -240,7 +310,8 @@
               <p>Vanity</p>
               <div class="overlay"></div>
               <img
-                style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8bfc5462416311.5a8f4329b7715.jpg')"
+                class="lazy-art"
+                data-lazy="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8bfc5462416311.5a8f4329b7715.jpg"
                 src="images/blanksquare.png"
                 alt=""
               />
@@ -250,7 +321,8 @@
               <p>Monorail</p>
               <div class="overlay"></div>
               <img
-                style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/be8c0d62416371.5a8f43862bd96.jpg')"
+                class="lazy-art"
+                data-lazy="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/be8c0d62416371.5a8f43862bd96.jpg"
                 src="images/blanksquare.png"
                 alt=""
               />
@@ -260,7 +332,8 @@
               <p>Poly Planet</p>
               <div class="overlay"></div>
               <img
-                style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ac896b62416395.5a8f43cd73988.png')"
+                class="lazy-art"
+                data-lazy="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ac896b62416395.5a8f43cd73988.png"
                 src="images/blanksquare.png"
                 alt=""
               />
@@ -270,17 +343,8 @@
               <p>Bogie</p>
               <div class="overlay"></div>
               <img
-                style="background-image: url('https://mir-cdn.behance.net/v1/rendition/project_modules/max_1200/3e2ac662418303.5a8f55411e53b.jpg')"
-                src="images/blanksquare.png"
-                alt=""
-              />
-            </div>
-
-            <div class="frame">
-              <p>Beta Club</p>
-              <div class="overlay"></div>
-              <img
-                style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/11cfa162418413.5a8f569b3e39a.jpg')"
+                class="lazy-art"
+                data-lazy="https://mir-cdn.behance.net/v1/rendition/project_modules/max_1200/3e2ac662418303.5a8f55411e53b.jpg"
                 src="images/blanksquare.png"
                 alt=""
               />
@@ -395,7 +459,7 @@
             }
           });
         },
-        { threshold: 0.5 }
+        { threshold: 0.4 }
       );
 
       const sections = document.querySelectorAll(".section");
@@ -408,7 +472,7 @@
           entries.forEach(entry => {
             if (entry.isIntersecting === true) {
               console.log("animating");
-              entry.target.style.animation = `anim1 .7s ${entry.target.dataset.delay} forwards ease-out`;
+              entry.target.style.animation = `anim1 .6s ${entry.target.dataset.delay} forwards ease-out`;
               observer.unobserve(entry.target);
             }
           });
@@ -419,6 +483,24 @@
       const animations = document.querySelectorAll(".anim");
       animations.forEach(animation => {
         animObserver.observe(animation);
+      });
+
+      const lazyObserver = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting === true) {
+              console.log("lazy loaded");
+              entry.target.style.backgroundImage = `url(${entry.target.dataset.lazy})`;
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { rootMargin: "0% 0% 10% 0%", threshold: 0 }
+      );
+
+      const lazyImages = document.querySelectorAll(".lazy-art");
+      lazyImages.forEach(image => {
+        lazyObserver.observe(image);
       });
     </script>
   </body>
